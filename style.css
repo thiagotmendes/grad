@@ -1,0 +1,178 @@
+/*
+Theme Name: Graduamais
+Theme URI:
+Author:  4media Agencia de Comunicação - Devel:Thiago Mendes
+Author URI: http://4media.com.br/
+Description: Thema desenvolvido por Thiago Mendes junto a 4media
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: Bootstrap,HTML, CSS
+Text Domain: 4media agência digital
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+.pesquisa {
+  margin-top: 20px;
+}
+
+.titulo-interno {
+  color: #044e7f;
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.box-preco {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.pre-fale-conosco {
+  background: #f15a2b;
+  color: #fff;
+  padding-top: 10px;
+  padding-left: 20px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.preco {
+  font-size: 32px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.texto-col-azul {
+  text-align: center;
+}
+
+.texto-col-cinza {
+  font-size: 14px;
+}
+
+.col-preco {
+  background: #044e7f;
+  color: #fff;
+}
+
+.col-preco-direita {
+  padding-top: 20px;
+  background: #f7f7f7;
+  color: #454545;
+  min-height: 115px;
+}
+
+.previa-noticia-home{
+  max-height: 150px;
+}
+
+.imgpost{
+  height: 257px;
+  overflow: hidden;
+}
+
+.form-pesquisa{
+  margin-bottom: 15px;
+}
+
+.pag-interno h1{
+  color: #044e7f;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.box-matricule{
+  background-color: #044e7f;
+  padding: 20px 25px;
+  color: #fff;
+}
+
+.box-matricule h3{
+  color: #e75933;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.pag-interno{
+  padding: 25px 0;
+}
+
+main{
+  padding: 0 0 25px;
+}
+
+.btn-matricula{
+  margin-top: 20px;
+  background-color: #f15a2b;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.btn-matricula:hover{
+  background-color: #f15a2b;
+  color: #fff !important;
+}
+
+.box-cinza-form{
+  padding-top: 15px;
+  border: #ccc solid 1px;
+}
+
+/********** TABS DOS CURSOS *****************/
+.tabs-curso{
+  background-color: #eaeaea;
+}
+
+.conteudo-tabs{
+  padding: 20px 0;
+}
+
+.tabs-curso > li > a{
+  border-radius: 0px !important;
+}
+
+.tabs-curso > li > a:hover,
+.tabs-curso > li > a:focus,
+.tabs-curso > li.active > a,
+.tabs-curso > li.active > a:focus,
+.tabs-curso > li.active > a:hover{
+  background-color: #044e7f;
+  color: #eaeaea;
+}
+
+/********************************************/
+.btn-link-curso{
+  border: #ccc solid 1px;
+  border-radius: 5px;
+  display: block;
+  padding: 8px 10px;
+  background: #f1f1f1;
+  margin-bottom: 10px;
+}
+
+.btn-saibamais-curso{
+  background-color: #747474;
+  color: #fff;
+  width: 100%;
+}
+
+.btn-saibamais-curso:hover{
+  background-color: #4b4141;
+  color: #fff !important;
+}
+
+.btn-matricule{
+  background-color: #f15a2b;
+  color: #fff;
+  width: 100%;
+}
+
+.btn-matricule:hover{
+  background-color: #c03a11;
+  color: #fff !important;
+}
+/***********************************************/
