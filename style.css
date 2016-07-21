@@ -14,6 +14,9 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
+main{
+  padding-bottom: 25px;
+}
 
 .pesquisa {
   margin-top: 20px;
@@ -101,10 +104,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
   padding: 25px 0;
 }
 
-main{
-  padding: 0 0 25px;
-}
-
 .btn-matricula{
   margin-top: 20px;
   background-color: #f15a2b;
@@ -117,31 +116,101 @@ main{
   color: #fff !important;
 }
 
+.box-ser-gestor {
+  background: #e8e8e8;
+  color: #515152;
+}
+
+.box-garante-vendas {
+  background: #e8e8e8;
+  color: #515152;
+  min-height: 220px;
+}
+
+.titulo-vantagem {
+  background: #f15a2b;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 0 10px 0;
+}
+
+.titulo-ser-gestor {
+  background: #044e7f;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 0 10px 0;
+}
+
+.texto-ser-gestor {
+  padding: 0 15px 15px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.nome-curso-portfolio {
+  background: #044e7f;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.cursos-porftolio {
+  color: #044e7f;
+}
+
+.cursos-porftolio:hover {
+  color: #f15a2b;
+  text-decoration: none;
+}
+
+.abas-portfolio {
+  margin-top: 20px;
+}
+
 .box-cinza-form{
   padding-top: 15px;
   border: #ccc solid 1px;
 }
 
-/********** TABS DOS CURSOS *****************/
-.tabs-curso{
-  background-color: #eaeaea;
+/**********************************************************************/
+.aba-azul {
+  background: #044e7f;
+  color: #fff;
+  font-size: 18px;
 }
 
-.conteudo-tabs{
-  padding: 20px 0;
+.aba-azul:visited {
+  background: #044e7f;
+  color: #fff;
 }
 
-.tabs-curso > li > a{
-  border-radius: 0px !important;
+.aba-azul:hover, .aba-azul:active, .aba-azul:focus {
+  background: #f15a2b !important;
+  color: #fff !important;
+  border: 1px solid #f15a2b !important;
+  cursor: pointer;
+  transition-duration: 1s;
 }
 
-.tabs-curso > li > a:hover,
-.tabs-curso > li > a:focus,
-.tabs-curso > li.active > a,
-.tabs-curso > li.active > a:focus,
-.tabs-curso > li.active > a:hover{
-  background-color: #044e7f;
-  color: #eaeaea;
+.aba-laranja {
+  background: #f15a2b;
+  color: #fff;
+  font-size: 18px;
+}
+
+/*.aba-laranja:visited {
+  background: #f15a2b;
+  color: #fff;
+}*/
+
+.aba-laranja:hover, .aba-laranja:active, .aba-laranja:focus,.aba-laranja:visited {
+  background: #044e7f !important;
+  color: #fff !important;
+  border: 1px solid #044a7f !important;
+  cursor: pointer;
+  transition-duration: 1s;
 }
 
 /********************************************/
