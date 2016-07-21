@@ -26,9 +26,13 @@
           <?php
             $argCursos = array(
               'post_type'       => 'cursos',
+<<<<<<< HEAD
               'posts_per_page'  => 8,
               'orderby' => 'menu_order',
               'order' => 'ASC',
+=======
+              'posts_per_page'  => 4,
+>>>>>>> cc70505338358502181738e458a67ae37cff1e42
               'tax_query' => array(
                 array(
                 'taxonomy' => 'categoria',
@@ -251,7 +255,11 @@
             </div>
           </div>
           <div class="col-md-4">
+<<<<<<< HEAD
             <a href="<?php echo esc_url( home_url( 'seja-um-gestor' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/call-gestor.jpg" alt=""  class="img-responsive img-call-gestor"/></a>
+=======
+            <img src="<?php echo get_template_directory_uri(); ?>/images/call-gestor.jpg" alt=""  class="img-responsive img-call-gestor"/>
+>>>>>>> cc70505338358502181738e458a67ae37cff1e42
           </div>
         </div>
       </div>

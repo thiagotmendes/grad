@@ -38,6 +38,7 @@
       </div>
     </div>
   </div>
+<<<<<<< HEAD
 </footer>
 <section class="copy">
   <div class="container">
@@ -53,5 +54,23 @@
     </div>
   </div>
 </section>
+=======
+  <section class="copy">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10">
+          <div>
+            <p class="texto-copy">Copyright (c) 2016 Instituto COTEMAR. Todos os direitos reservados. Termosde uso e privacidade.</p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <a href="http://4media.com.br/" target="_blank" class="ass"><strong>4media</strong></a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</footer>
+<?php wp_footer() ?>
+>>>>>>> cc70505338358502181738e458a67ae37cff1e42
 </body>
 </html>

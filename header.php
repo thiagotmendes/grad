@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
+<<<<<<< HEAD
     <!--CSS-->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/estilo.css" media="screen">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/bootstrap.css" media="screen">
@@ -17,6 +18,9 @@
     <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/bootstrap.js"></script>
 
 
+=======
+    <?php wp_head() ?>
+>>>>>>> cc70505338358502181738e458a67ae37cff1e42
     <title>
       <?php
 	      if ( is_single() ) {
@@ -66,7 +70,13 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6">
+<<<<<<< HEAD
               <a class="navbar-brand" href="#"><img src="<?php echo get_template_directory_uri() ?>/images/logo.png" alt="" class="img-responsive"/></a>
+=======
+              <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+                <img src="<?php echo get_template_directory_uri() ?>/images/logo.png" alt="<?php bloginfo( 'name' ); ?>" class="img-responsive"/>
+              </a>
+>>>>>>> cc70505338358502181738e458a67ae37cff1e42
             </div>
             <div class="col-md-6">
               <span>

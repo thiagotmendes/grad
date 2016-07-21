@@ -508,12 +508,20 @@ main {
   color: #fff;
   font-size: 18px;
   text-align: center;
+<<<<<<< HEAD
+=======
+  padding-top: 10px;
+>>>>>>> cc70505338358502181738e458a67ae37cff1e42
 }
 
 .col-azul-form {
   background: #044e7f;
   color: #fff;
   font-size: 18px;
+<<<<<<< HEAD
+=======
+  padding-top: 10px;
+>>>>>>> cc70505338358502181738e458a67ae37cff1e42
 }
 
 .box-form {
