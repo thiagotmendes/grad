@@ -46,6 +46,44 @@ jQuery(document).ready(function(){
   });
 });
 
+/*************************************/
+/********** FORMULARIO **************/
+$(document).ready( function(){
+	$('#nomeCompleto').keyup(function (e) {
+		var nome = $('#nomeCompleto').val();
+		$('#nomeInscrito').val(nome);
+	});
+	$('#cep').keyup(function (e) {
+		var envio = $('#cep').val();
+		$('#celForm').val(envio);
+	});
+	$('#cel').keyup(function (e) {
+		var cel = $('#cel').val();
+		$('#celForm').val(cel);
+	});
+	$('#emailInscrito').keyup(function (e) {
+		var email = $('#emailInscrito').val();
+		$('#emailCompra').val(email);
+	});
+
+});
+
+$(document).ready(function(){
+	$('#form_matricula').submit(function(){
+		var dados = $( this ).serialize();
+		$.ajax({
+			type: "POST",
+			url: "/wp-content/themes/graduamais/functions/matricula.php",
+			data: dados,
+			success: function( data )
+			{
+				jQuery('#modalConfirm').modal('show')
+			}
+		});
+		return false;
+	});
+});
+/********** /FORMULARIO **************/
 
 jQuery(function($){
 	$(".data").mask("99/99/9999");

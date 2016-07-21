@@ -50,7 +50,7 @@
       <?php
       $titulo = get_the_title();
       ?>
-      <a href="<?php echo esc_url( home_url( 'matricule-se' ) ); ?>?curso=<?php echo str_replace(' ', '-', $titulo)  ?>" class="btn btn-matricula btn-block">Matrícule-se</a>
+      <a href="<?php echo esc_url( home_url( 'matricule-se' ) ); ?>?curso=<?php echo str_replace(' ', '-', $titulo)  ?>&c=<?php echo get_the_id() ?>" class="btn btn-matricula btn-block">Matrícule-se</a>
 
     </div>
   </div>

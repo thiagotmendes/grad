@@ -10,15 +10,30 @@
            </div>
        </div>
        <div class="row">
-          <div class="col-md-12 box-cinza-form">
+          <div class="col-md-5 box-cinza-form">
               <?php
-                $curso = $_GET['curso'];
+                //$curso = $_GET['curso'];
+                if(is_numeric($_GET['c'])):
+                  $idCurso = $_GET['c'];
+                else:
+                  $urlSite = get_site_url();
+                  echo $urlSite;
+                  echo "<script>";
+                    echo  "location.href='$urlSite/curso-nao-encontrado'";
+                  echo "</script>";
+                endif;
               ?>
-             <h3 style="margin-top:0px;"> <?php echo str_replace('-', ' ', $curso) ?> </h3>
-             <input type="hidden" name="curso-escolhido" value="<?php echo str_replace('-', ' ', $curso) ?>">
+             <h3 style="margin-top:0px;"> <?php echo get_post_field('post_title', $idCurso); ?> </h3>
+             <input type="hidden" name="curso-escolhido" value="<?php echo get_post_field('post_title', $idCurso); ?>">
+          </div>
+          <div class="col-md-7 box-cinza-form">
+            <strike> <?php echo get_post_field('valor_inicial_1', $idCurso); ?></strike>
+            <?php echo get_post_field('valor_final_1', $idCurso); ?>
           </div>
        </div>
     </div>
+
+
 
     <div class="box-form">
         <div class="row">
@@ -55,7 +70,7 @@
            <div class="col-md-4">
               <div class="form-group">
                  <label for="exampleInputName2">Nome Completo</label>
-                 <input type="text" name="nome" class="form-control" placeholder="">
+                 <input type="text" name="nome" id="nomeCompleto" class="form-control" placeholder="">
               </div>
            </div>
            <div class="col-md-2">
@@ -97,7 +112,7 @@
            <div class="col-md-6">
               <div class="form-group">
                  <label for="exampleInputName2">Email</label>
-                 <input type="text" name="email" class="form-control" id="exampleInputName2" placeholder="">
+                 <input type="text" name="email" class="form-control" id="emailInscrito" placeholder="">
               </div>
            </div>
         </div>
@@ -265,22 +280,49 @@
   </div>
 </form>
 
-<script type="text/javascript">
-  jQuery(document).ready(function(){
-    jQuery('#form_matricula').submit(function(){
-      var dados = jQuery( this ).serialize();
+<!-- Modal -->
+<div class="modal fade" id="modalConfirm" tabindex="-1" role="dialog" aria-labelledby="Confirmação de matricula">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header alert-success">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Inscrição realizada com sucesso!</h4>
+      </div>
+      <div class="modal-body">
+        <p class="paragrafo box-100 margin-30-pagamento" style="text-align: center;">
+           <strong><span style="text-decoration: underline;">Atenção!</span></strong>
+           Clique no botão abaixo para escolher a forma de pagamento da sua <strong>Taxa de Inscrição - R$120,00</strong>.<br>
+           Você será direcionado à prestadora de serviços <strong>PagSeguro</strong>.
+         </p>
 
-      jQuery.ajax({
-        type: "POST",
-        url: "<?php echo get_template_directory_uri() ?>/functions/matricula.php",
-        data: dados,
-        success: function( data )
-        {
-          alert( data );
-        }
-      });
+         <div class="row">
+           <div class="col-md-6">
+             <button type="button" name="button"> Imprimir </button>
+           </div>
+           <div class="col-md-6">
+             <form method="post" target="pagseguro" action="https://pagseguro.uol.com.br/v2/checkout/payment.html">
+                <!-- Campos obrigatórios -->
+                <input name="receiverEmail" type="hidden" value="suporte@lojamodelo.com.br">
+                <input name="currency" type="hidden" value="BRL">
+                <!-- Itens do pagamento (ao menos um item é obrigatório) -->
+                <input name="itemId1" type="hidden" value="0001">
+                <input name="itemDescription1" type="hidden" value="<?php echo str_replace('-', ' ', $curso) ?>">
+                <input name="itemAmount1" type="hidden" value="150.00">
+                <input name="itemQuantity1" type="hidden" value="1">
+                <!-- Código de referência do pagamento no seu sistema (opcional) -->
+                <input name="reference" type="hidden" value="REF1234">
+                <!-- Dados do comprador (opcionais) -->
+                <input name="senderName" type="hidden" id="nomeInscrito" value="" >
+                <input name="senderAreaCode" type="hidden" id="envio" value="">
+                <input name="senderPhone" type="hidden" id="celForm" value="">
+                <input name="senderEmail" type="hidden" id="emailCompra" value="" >
 
-      return false;
-    });
-  });
-</script>
+                <button type="submit" name="button" class="btn btn-success"> Pagar com PagSeguro </button>
+             </form>
+           </div>
+         </div>
+
+      </div>
+    </div>
+  </div>
+</div>

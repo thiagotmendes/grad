@@ -138,7 +138,7 @@
   $mail->AddAttachment($f_tmp, $f_name);  // Insere um anexo
 
   // Envia o e-mail
-  $enviado = $mail->Send();
+  //$enviado = $mail->Send();
 
   // Limpa os destinat�rios e os anexos
   $mail->ClearAllRecipients();
