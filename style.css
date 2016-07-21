@@ -1,0 +1,238 @@
+/*
+Theme Name: Graduamais
+Theme URI:
+Author:  4media Agencia de Comunicação - Devel:Thiago Mendes
+Author URI: http://4media.com.br/
+Description: Thema desenvolvido por Thiago Mendes junto a 4media
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: Bootstrap,HTML, CSS
+Text Domain: 4media agência digital
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+.pesquisa {
+  margin-top: 20px;
+}
+
+.titulo-interno {
+  color: #044e7f;
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.box-preco {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.pre-fale-conosco {
+  background: #f15a2b;
+  color: #fff;
+  padding-top: 10px;
+  padding-left: 20px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.preco {
+  font-size: 32px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.texto-col-azul {
+  text-align: center;
+}
+
+.texto-col-cinza {
+  font-size: 14px;
+}
+
+.col-preco {
+  background: #044e7f;
+  color: #fff;
+}
+
+.col-preco-direita {
+  padding-top: 20px;
+  background: #f7f7f7;
+  color: #454545;
+  min-height: 115px;
+}
+
+.previa-noticia-home{
+  max-height: 150px;
+}
+
+.imgpost{
+  height: 257px;
+  overflow: hidden;
+}
+
+.form-pesquisa{
+  margin-bottom: 15px;
+}
+
+.pag-interno h1{
+  color: #044e7f;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.box-matricule{
+  background-color: #044e7f;
+  padding: 20px 25px;
+  color: #fff;
+}
+
+.box-matricule h3{
+  color: #e75933;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.pag-interno{
+  padding: 25px 0;
+}
+
+.btn-matricula{
+  margin-top: 20px;
+  background-color: #f15a2b;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.btn-matricula:hover{
+  background-color: #f15a2b;
+  color: #fff !important;
+}
+
+.box-ser-gestor {
+  background: #e8e8e8;
+  color: #515152;
+}
+
+.box-garante-vendas {
+  background: #e8e8e8;
+  color: #515152;
+  min-height: 220px;
+}
+
+.titulo-vantagem {
+  background: #f15a2b;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 0 10px 0;
+}
+
+.titulo-ser-gestor {
+  background: #044e7f;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 0 10px 0;
+}
+
+.texto-ser-gestor {
+  padding: 0 15px 15px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.nome-curso-portfolio {
+  background: #044e7f;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.cursos-porftolio {
+  color: #044e7f;
+}
+
+.cursos-porftolio:hover {
+  color: #f15a2b;
+  text-decoration: none;
+}
+
+.abas-portfolio {
+  margin-top: 20px;
+}
+
+.aba-azul {
+  background: #044e7f;
+  color: #fff;
+  font-size: 18px;
+}
+
+.aba-azul:visited {
+  background: #044e7f;
+  color: #fff;
+}
+
+.aba-azul:hover, .aba-azul:active, .aba-azul:focus {
+  background: #f15a2b !important;
+  color: #fff !important;
+  border: 1px solid #f15a2b !important;
+  cursor: pointer;
+  transition-duration: 1s;
+}
+
+.aba-laranja {
+  background: #f15a2b;
+  color: #fff;
+  font-size: 18px;
+}
+
+/*.aba-laranja:visited {
+  background: #f15a2b;
+  color: #fff;
+}*/
+
+.aba-laranja:hover, .aba-laranja:active, .aba-laranja:focus,.aba-laranja:visited {
+  background: #044e7f !important;
+  color: #fff !important;
+  border: 1px solid #044a7f !important;
+  cursor: pointer;
+  transition-duration: 1s;
+}
+
+/********************************************/
+.btn-link-curso{
+  border: #ccc solid 1px;
+  border-radius: 5px;
+  display: block;
+  padding: 8px 10px;
+  background: #f1f1f1;
+  margin-bottom: 10px;
+}
+
+.btn-saibamais-curso{
+  background-color: #747474;
+  color: #fff;
+  width: 100%;
+}
+
+.btn-saibamais-curso:hover{
+  background-color: #4b4141;
+  color: #fff !important;
+}
+
+.btn-matricule{
+  background-color: #f15a2b;
+  color: #fff;
+  width: 100%;
+}
+
+.btn-matricule:hover{
+  background-color: #c03a11;
+  color: #fff !important;
+}
+/***********************************************/
