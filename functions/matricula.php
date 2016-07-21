@@ -18,20 +18,79 @@
   $num              = $_POST['num'];
   $complemento      = $_POST['complemento'];
   $bairro           = $_POST['bairro'];
-  $endereco         = $_POST['endereco'];
+  $cidade           = $_POST['cidade'];
   $estado           = $_POST['estado'];
   $nome_mae         = $_POST['nome-mae'];
   $nome_pai         = $_POST['nome-pai'];
   $curso_anterior   = $_POST['curso_anterior'];
   $data_conclusao   = $_POST['data_conclusao'];
   $como_conheceu    = $_POST['como_conheceu'];
+  $li_aceito        = $_POST['aceito'];
+  $data_matricula   = $_POST['data'];
 
   $mail_body  = "<h3>Inscrição via site Graduamais";
-  $mail_body .= "<table border='1' cellspacing='0' cellpadding='5'>";
+  $mail_body .= "<table border='1' cellspacing='0' cellpadding='15' width='100%'>";
     $mail_body .= "<tr>";
       $mail_body .= "<td> Curso: $curso_escolhido </td>";
+      $mail_body .= "<td> Data de Pré-matricula: $data_matricula </td>";
     $mail_body .= "</tr>";
-  $mail_body .= "<table>";
+  $mail_body .= "</table>";
+
+  $mail_body .= "<table border='1' cellspacing='0' cellpadding='15' width='100%'>";
+    $mail_body .= "<tr>";
+      $mail_body .= "<th colspan='4'> Identificação </th>";
+    $mail_body .= "</tr>";
+    $mail_body .= "<tr>";
+      $mail_body .= "<td> CPF: $cpf </td>";
+      $mail_body .= "<td> Identidade: $identidade </td>";
+      $mail_body .= "<td colspan='2'> Orgão Emissor: $orgaoemissor </td>";
+    $mail_body .= "</tr>";
+    $mail_body .= "<tr>";
+      $mail_body .= "<td> Nome: $nome </td>";
+      $mail_body .= "<td> Sexo: $sexo </td>";
+      $mail_body .= "<td> Data Nascimento: $data_nascimento </td>";
+      $mail_body .= "<td> Naturalidade: $naturalidade </td>";
+    $mail_body .= "</tr>";
+    $mail_body .= "<tr>";
+      $mail_body .= "<td> Telefone: $telefone </td>";
+      $mail_body .= "<td> Celular: $celular </td>";
+      $mail_body .= "<td colspan='2'> Email: $email </td>";
+    $mail_body .= "</tr>";
+    $mail_body .= "<tr>";
+      $mail_body .= "<td> CEP: $cep </td>";
+      $mail_body .= "<td> Endereço: $endereco </td>";
+      $mail_body .= "<td> Nº: $num </td>";
+      $mail_body .= "<td> Complemento: $Complemento </td>";
+    $mail_body .= "</tr>";
+    $mail_body .= "<tr>";
+      $mail_body .= "<td> Bairro: $bairro </td>";
+      $mail_body .= "<td colspan='2'> Cidade: $cidade </td>";
+      $mail_body .= "<td> Estado: $estado </td>";
+    $mail_body .= "</tr>";
+  $mail_body .= "</table>";
+
+  $mail_body .= "<table border='1' cellspacing='0' cellpadding='15' width='100%'>";
+    $mail_body .= "<tr>";
+      $mail_body .= "<th colspan='2'> Filiação </th>";
+    $mail_body .= "</tr>";
+    $mail_body .= "<tr>";
+      $mail_body .= "<td> Nome da mãe: $nome_mae </td>";
+      $mail_body .= "<td> Nome do Pai: $nome_pai </td>";
+    $mail_body .= "</tr>";
+  $mail_body .= "</table>";
+
+  $mail_body .= "<table border='1' cellspacing='0' cellpadding='15' width='100%'>";
+    $mail_body .= "<tr>";
+      $mail_body .= "<th colspan='3'> Conclusão de Curso </th>";
+    $mail_body .= "</tr>";
+    $mail_body .= "<tr>";
+      $mail_body .= "<td> Curso de Graduação: $curso_anterior </td>";
+      $mail_body .= "<td> Data de Conclusão: $data_conclusao </td>";
+      $mail_body .= "<td> Como nos conheceu: $como_conheceu </td>";
+    $mail_body .= "</tr>";
+  $mail_body .= "</table>";
+
+  $mail_body .= $li_aceito;
 
   // Inicia a classe PHPMailer
   $mail = new PHPMailer();

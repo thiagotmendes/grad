@@ -243,7 +243,8 @@
            <div class="col-md-7">
              <div class="checkbox">
                <label>
-                 <input type="checkbox"> Li e aceito o regulamento e concordo com todas as informações do curso.
+                 <input type="checkbox" name="aceito" value="Li e aceito o regulamento e concordo com todas as informações do curso.">
+                 Li e aceito o regulamento e concordo com todas as informações do curso.
                </label>
              </div>
            </div>
