@@ -27,12 +27,16 @@
   $como_conheceu    = $_POST['como_conheceu'];
   $li_aceito        = $_POST['aceito'];
   $data_matricula   = $_POST['data'];
+  $parcela          = $_POST['parcela'];
 
-  $mail_body  = "<h3>Inscrição via site Graduamais";
-  $mail_body .= "<table border='1' cellspacing='0' cellpadding='15' width='100%'>";
+  $mail_body = "<table border='1' cellspacing='0' cellpadding='15' width='100%'>";
+    $mail_body .= "<tr>";
+      $mail_body .= "<th colspan='3'> <h3>Inscrição via site Graduamais</h3> </th>";
+    $mail_body .= "</tr>";
     $mail_body .= "<tr>";
       $mail_body .= "<td> Curso: $curso_escolhido </td>";
       $mail_body .= "<td> Data de Pré-matricula: $data_matricula </td>";
+      $mail_body .= "<td> Escolha de parcelamento: $parcela </td>";
     $mail_body .= "</tr>";
   $mail_body .= "</table>";
 

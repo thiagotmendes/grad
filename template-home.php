@@ -4,6 +4,23 @@
 
     <section class="banner">
       <img src="<?php echo get_template_directory_uri(); ?>/images/banner.jpg" alt="" class="img-responsive"/>
+      <div class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Modal title</h4>
+            </div>
+            <div class="modal-body">
+              <p>One fine body&hellip;</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
     </section>
 
     <section class="cursos">
@@ -26,7 +43,9 @@
           <?php
             $argCursos = array(
               'post_type'       => 'cursos',
-              'posts_per_page'  => 4,
+              'posts_per_page'  => 8,
+              'orderby' => 'menu_order',
+              'order' => 'ASC',
               'tax_query' => array(
                 array(
                 'taxonomy' => 'categoria',
@@ -205,7 +224,7 @@
         </div>
 
         <p align="center">
-          <a class="faca-parte" href="#" role="button">Faça parte você também. Clique Aqui!</a>
+          <a class="faca-parte" href="#" role="button">Faça parte você também. <strong>Clique Aqui!</strong></a>
         </p>
       </div>
     </section>
@@ -220,9 +239,9 @@
             <div class="box-oque-gestor">
               <h3 class="titulo-box-oque-gestor">O que é ser um gestor?</h3>
               <p class="oque-gestor">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                O gestor é um braço do Instituto Graduamais na região onde mora ou atua.
+                Ele tem a responsabilidade de divulgar os cursos do instituto e ampliar nosso mercado de atuação.
+                Por meio de ferramentas, informações, suporte comercial e pedagógico e atualização constante, o gestor se torna um especialista comercial na área educacional.
               </p>
             </div>
           </div>
@@ -249,7 +268,7 @@
             </div>
           </div>
           <div class="col-md-4">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/call-gestor.jpg" alt=""  class="img-responsive img-call-gestor"/>
+            <a href="<?php echo esc_url( home_url( 'fature-alto' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/call-gestor.jpg" alt=""  class="img-responsive img-call-gestor"/></a>
           </div>
         </div>
       </div>

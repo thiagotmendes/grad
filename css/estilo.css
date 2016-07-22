@@ -42,7 +42,7 @@ main {
   font-size: 18px;
   color: #f15a2b;
   background: #1f1f1f;
-  padding: 5px;
+  padding: 5px 10px;
   margin-top: -5px;
   margin-bottom: -3px;
 }
@@ -148,7 +148,7 @@ main {
 }
 
 .box-curso:hover{
-  background-color: #c2c2c2;
+  background-color: #f1f1f1;
 }
 
 .titulo-pos {
@@ -244,7 +244,6 @@ main {
   text-align: center;
   margin-top: 30px;
   font-size: 18px;
-  font-weight: bold;
 }
 
 .faca-parte:hover {

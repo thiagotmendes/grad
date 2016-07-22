@@ -32,10 +32,13 @@
         <a href="<?php the_permalink() ?>" class="btn-link-curso"><?php the_title(); ?></a>
       </div>
       <div class="col-md-2">
-        <a href="#" class="btn btn-saibamais-curso"> Saiba Mais </a>
+        <a href="<?php the_permalink() ?>" class="btn btn-saibamais-curso"> Saiba Mais </a>
       </div>
       <div class="col-md-3">
-        <a href="#" class="btn btn-matricule"> Matricule-se </a>
+        <?php $titulo = get_the_title(); ?>
+        <a href="<?php echo esc_url( home_url( 'matricule-se' ) ); ?>?curso=<?php echo str_replace(' ', '-', $titulo)  ?>&c=<?php echo get_the_id() ?>" class="btn btn-matricule">
+          Matricule-se
+        </a>
       </div>
     </div>
     <?php

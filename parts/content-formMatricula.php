@@ -9,8 +9,8 @@
               <p>Curso Escolhido</p>
            </div>
        </div>
-       <div class="row">
-          <div class="col-md-5 box-cinza-form">
+       <div class="row box-cinza-form">
+          <div class="col-md-4">
               <?php
                 //$curso = $_GET['curso'];
                 if(is_numeric($_GET['c'])):
@@ -26,9 +26,59 @@
              <h3 style="margin-top:0px;"> <?php echo get_post_field('post_title', $idCurso); ?> </h3>
              <input type="hidden" name="curso-escolhido" value="<?php echo get_post_field('post_title', $idCurso); ?>">
           </div>
-          <div class="col-md-7 box-cinza-form">
-            <strike> <?php echo get_post_field('valor_inicial_1', $idCurso); ?></strike>
-            <?php echo get_post_field('valor_final_1', $idCurso); ?>
+          <div class="col-md-8">
+            <div class="form-pagamento">
+              Escolha abaixo a melhor forma de pagamento. Em seguida, você receberá os boletos referentes às mensalidades.
+              <?php
+              $val1 = get_post_field('valor_final_1', $idCurso);
+              if ($val1):
+                echo '<label class="radio-inline">';
+                  $valini1 = get_post_field('valor_inicial_1', $idCurso);
+                  if ($valini1) {
+                    echo "<strike> R$" .get_post_field('valor_inicial_1', $idCurso) ."</strike> <br>";
+                  }
+                  echo '<input type="radio" name="parcela" id="inlineCheckbox1" value="R$ '.$val1.'">';
+                  echo get_post_field('valor_final_1', $idCurso);
+                echo '</label>';
+              endif;
+
+              $val2 = get_post_field('valor_final_2', $idCurso);
+              if ($val2):
+                echo '<label class="radio-inline">';
+                  $valini2 = get_post_field('valor_inicial_2', $idCurso);
+                  if ($valini2) {
+                    echo "<strike> R$" .get_post_field('valor_inicial_2', $idCurso) ."</strike> <br>";
+                  }
+                  echo '<input type="radio" name="parcela" id="inlineCheckbox1" value="R$ '.$val2.'">';
+                  echo get_post_field('valor_final_2', $idCurso);
+                echo '</label>';
+              endif;
+
+              $val3 = get_post_field('valor_final_3', $idCurso);
+              if ($val3):
+                echo '<label class="radio-inline">';
+                  $valini3 = get_post_field('valor_inicial_3', $idCurso);
+                  if ($valini3) {
+                    echo "<strike> R$" .get_post_field('valor_inicial_3', $idCurso) ."</strike> <br>";
+                  }
+                  echo '<input type="radio" name="parcela" id="inlineCheckbox1" value="R$ '.$val3.'">';
+                  echo get_post_field('valor_final_3', $idCurso);
+                echo '</label>';
+              endif;
+
+              $val4 = get_post_field('valor_final_4', $idCurso);
+              if ($val4):
+                echo '<label class="radio-inline">';
+                  $valini4 = get_post_field('valor_inicial_4', $idCurso);
+                  if ($valini4) {
+                    echo "<strike> R$" .get_post_field('valor_inicial_4', $idCurso) ."</strike> <br>";
+                  }
+                  echo '<input type="radio" name="parcela" id="inlineCheckbox1" value="R$ '.$val4.'">';
+                  echo get_post_field('valor_final_4', $idCurso);
+                echo '</label>';
+              endif;
+              ?>
+            </div>
           </div>
        </div>
     </div>
