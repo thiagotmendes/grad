@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+
+=======
 jQuery(document).ready(function($) {
 	$('ul.nav li.dropdown, ul.nav li.dropdown-submenu').hover(function() {
 		$(this).find(' > .dropdown-menu').stop(true, true).delay(200).fadeIn();
@@ -5,6 +8,7 @@ jQuery(document).ready(function($) {
 		$(this).find(' > .dropdown-menu').stop(true, true).delay(200).fadeOut();
 	});
 });
+>>>>>>> cc70505338358502181738e458a67ae37cff1e42
 
 jQuery(document).ready(function(){
   jQuery('.parceiros').slick({
@@ -85,6 +89,56 @@ $(document).ready(function(){
 });
 /********** /FORMULARIO **************/
 
+<<<<<<< HEAD
+jQuery(document).ready(function(){
+  jQuery('.cartoes').slick({
+    dots: false,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3500,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+          autoplay: true,
+          autoplaySpeed: 3500,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 3500,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 3500,
+          arrows: false,
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+  });
+=======
 jQuery(function($){
 	$(".data").mask("99/99/9999");
   $("#telefone-fix").mask("(999) 9999-9999");
@@ -92,4 +146,5 @@ jQuery(function($){
   $("#cpf").mask("999.999.999-99");
   $("#cep").mask("99999-999");
 	$("#num").mask("00000");
+>>>>>>> cc70505338358502181738e458a67ae37cff1e42
 });
