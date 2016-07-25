@@ -6,21 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-<<<<<<< HEAD
-    <!--CSS-->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/estilo.css" media="screen">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/bootstrap.css" media="screen">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/font-awesome.css" media="screen">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/style.css" media="screen">
-
-    <!--JS-->
-    <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/jquery-1.12.4.js"></script>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/bootstrap.js"></script>
-
-
-=======
     <?php wp_head() ?>
->>>>>>> cc70505338358502181738e458a67ae37cff1e42
     <title>
       <?php
 	      if ( is_single() ) {
@@ -56,11 +42,12 @@
           <div class="whats-top">
             <span><i class="fa fa-whatsapp" aria-hidden="true"></i> <small>037 98826-7505</small></span>
             <span class="tel-top"><i class="fa fa-phone" aria-hidden="true"></i> 0800 037 4212</span>
-            <a href="#"><span class="sociais-top"><i class="fa fa-youtube-play" aria-hidden="true" title="Youtube"></i></span></a>
-            <a href="#"><span class="sociais-top"><i class="fa fa-twitter" aria-hidden="true" title="Twitter"></i></span></a>
-            <a href="#"><span class="sociais-top"><i class="fa fa-linkedin" aria-hidden="true" title="Linkedin"></i></span></a>
-            <a href="#"><span class="sociais-top"><i class="fa fa-instagram" aria-hidden="true" title="Instagram"></i></span></a>
-            <a href="#"><span class="sociais-top"><i class="fa fa-facebook" aria-hidden="true" title="Facebook"></i></span></a>
+            <!--<a href="" target="_blank"><span class="sociais-top"><i class="fa fa-youtube-play" aria-hidden="true" title="Youtube"></i></span></a>-->
+            <a href="https://plus.google.com/109714730035419030606/posts" target="_blank"><span class="sociais-top"><i class="fa fa-google-plus" aria-hidden="true" title="Google Plus"></i></span></a>
+            <a href="https://twitter.com/instcotemar" target="_blank"><span class="sociais-top"><i class="fa fa-twitter" aria-hidden="true" title="Twitter"></i></span></a>
+            <a href="https://www.linkedin.com/company/instituto-cotemar" target="_blank"><span class="sociais-top"><i class="fa fa-linkedin" aria-hidden="true" title="Linkedin"></i></span></a>
+            <a href="https://www.instagram.com/instituto_cotemar/" target="_blank"><span class="sociais-top"><i class="fa fa-instagram" aria-hidden="true" title="Instagram"></i></span></a>
+            <a href="https://www.facebook.com/InstitutoCotemar" target="_blank"><span class="sociais-top"><i class="fa fa-facebook" aria-hidden="true" title="Facebook"></i></span></a>
 
             <a href="#"><span class="area-aluno"><i class="fa fa-user icon-user" aria-hidden="true"></i> Campus Virtual</span></a>
           </div>
@@ -70,24 +57,24 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6">
-<<<<<<< HEAD
-              <a class="navbar-brand" href="#"><img src="<?php echo get_template_directory_uri() ?>/images/logo.png" alt="" class="img-responsive"/></a>
-=======
               <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
                 <img src="<?php echo get_template_directory_uri() ?>/images/logo.png" alt="<?php bloginfo( 'name' ); ?>" class="img-responsive"/>
               </a>
->>>>>>> cc70505338358502181738e458a67ae37cff1e42
             </div>
             <div class="col-md-6">
               <span>
                 <div class="input-group pesquisa-top">
+
                   <input type="text" class="form-control" placeholder="O que você procura...">
                   <span class="input-group-btn">
-                    <button class="btn btn-default" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    <button class="btn btn-warning" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
                   </span>
+
                 </div><!-- /input-group -->
               </span>
-              <span><a class="btn btn-call-top" href="#" role="button">Ligamos para você. Clique Aqui!</a></span>
+              <span>
+                <a class="btn btn-call-top" href="#" role="button" data-toggle="modal" data-target="#ligacao-cliente">Ligamos para você. Clique Aqui!</a>
+              </span>
             </div>
           </div>
         </div>
@@ -109,11 +96,43 @@
             <?php
   		    	$args = array(
   		    		'menu' => 'principal',
-  		    		'menu_class' => 'nav navbar-nav navbar-right',
-  		    		'walker'	 => new BootstrapNavMenuWalker()
+  		    		'menu_class' => 'nav navbar-nav',
+              'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+              'walker'            => new wp_bootstrap_navwalker()
   		    	);
   		    	wp_nav_menu( $args ); ?>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container -->
       </nav>
     </header>
+    <?php
+    if (!is_front_page()) {
+      if ( function_exists('yoast_breadcrumb') ) {
+        echo "<div class='trilha'>";
+          echo "<div class='container'>";
+            yoast_breadcrumb('<p id="breadcrumbs">','</p>');
+          echo "</div>";
+        echo "</div>";
+      }
+    }
+    ?>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="ligacao-cliente" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header alert-info">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel"> ATENDIMENTO POR TELEFONE </h4>
+          </div>
+          <div class="modal-body">
+            1 - Preencha os dados. <br>
+            2 - Digite o número do seu telefone. <br>
+            3 - Clique no botão ligar. <br>
+            4 - Seu telefone irá tocar em instantes.
+            <?php echo do_shortcode('[contact-form-7 id="218" title="Ligamos para você"]') ?>
+          </div>
+        </div>
+      </div>
+    </div>

@@ -52,7 +52,6 @@ main {
   font-size: 18px;
   color: #fff;
   background: #1f1f1f;
-  padding: 5px;
   margin-top: -5px;
   margin-bottom: -3px;
   text-decoration: none;
@@ -283,6 +282,7 @@ main {
   color: #fff;
   padding: 5px 10px 5px 10px;
   margin-top: 25px;
+  min-height: 285px;
 }
 
 .titulo-box-oque-gestor {
@@ -298,6 +298,7 @@ main {
   background: #f9f9f9;
   padding: 15px;
   margin-top: 25px;
+  min-height: 285px;
 }
 
 .nome-gestor {
@@ -507,20 +508,14 @@ main {
   color: #fff;
   font-size: 18px;
   text-align: center;
-<<<<<<< HEAD
-=======
   padding-top: 10px;
->>>>>>> cc70505338358502181738e458a67ae37cff1e42
 }
 
 .col-azul-form {
   background: #044e7f;
   color: #fff;
   font-size: 18px;
-<<<<<<< HEAD
-=======
   padding-top: 10px;
->>>>>>> cc70505338358502181738e458a67ae37cff1e42
 }
 
 .box-form {
@@ -533,7 +528,6 @@ main {
 }
 
 /*****************MENU*********************/
-
 .navbar-brand {
   height: auto !important;
   padding-top: 30px !important;
@@ -553,6 +547,8 @@ main {
 .navbar-graduamais .navbar-nav > li > a {
   color: #fff;
   text-transform: uppercase;
+  font-size: 13px !important;
+  font-weight: bold;
 }
 
 .navbar-graduamais .navbar-nav > li > a:hover,
@@ -563,14 +559,73 @@ main {
 }
 
 /*****************************************/
+/********* ABAS *************************/
+.aba-azul {
+  background: #044e7f;
+  color: #fff;
+  font-size: 18px;
+}
+
+.aba-azul:visited {
+  background: #044e7f;
+  color: #fff;
+}
+
+.aba-azul:hover, .aba-azul:active, .aba-azul:focus {
+  background: #f15a2b !important;
+  color: #fff !important;
+  border: 1px solid #f15a2b !important;
+  cursor: pointer;
+  transition-duration: 1s;
+}
+
+.aba-laranja {
+  background: #f15a2b;
+  color: #fff;
+  font-size: 18px;
+}
+
+/*.aba-laranja:visited {
+  background: #f15a2b;
+  color: #fff;
+}*/
+
+.aba-laranja:hover, .aba-laranja:active, .aba-laranja:focus,.aba-laranja:visited {
+  background: #044e7f !important;
+  color: #fff !important;
+  border: 1px solid #044a7f !important;
+  cursor: pointer;
+  transition-duration: 1s;
+}
+
+/********** TABS DOS CURSOS *****************/
+.tabs-curso{
+  background-color: #eaeaea;
+}
+
+.conteudo-tabs{
+  padding: 20px 0;
+}
+
+.tabs-curso > li > a{
+   border-radius: 0px !important;
+ }
+
+ .tabs-curso > li > a:hover,
+ .tabs-curso > li > a:focus,
+ .tabs-curso > li.active > a,
+ .tabs-curso > li.active > a:focus,
+ .tabs-curso > li.active > a:hover{
+   background-color: #044e7f;
+   color: #eaeaea;
+ }
+
 
 /****************FOOTER******************/
-
 footer {
   background: #044e7f;
   color: #fff;
   padding-top: 15px;
-  padding-bottom: 15px;
 }
 
 .copy {

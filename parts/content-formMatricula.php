@@ -329,6 +329,13 @@
 
   </div>
 </form>
+<div class="container">
+  <hr>
+  <p align="center">
+    <img src="<?php echo get_template_directory_uri() ?>/images/img-forma.jpg" alt="" />
+  </p>
+</div>
+
 
 <!-- Modal -->
 <div class="modal fade" id="modalConfirm" tabindex="-1" role="dialog" aria-labelledby="Confirmação de matricula">
@@ -347,7 +354,7 @@
 
          <div class="row">
            <div class="col-md-6">
-             <button type="button" name="button"> Imprimir </button>
+             <button type="button" name="button" class="btn btn-warning"> Imprimir </button>
            </div>
            <div class="col-md-6">
              <form method="post" target="pagseguro" action="https://pagseguro.uol.com.br/v2/checkout/payment.html">

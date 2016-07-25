@@ -10,13 +10,10 @@ function woocommerce_support() {
     add_theme_support( 'woocommerce' );
 }
 
-<<<<<<< HEAD
-=======
 /************* DISPARO DE EMAIL DOS CURSOS ****************/
 
 //require_once('functions/matricula.php');
 
->>>>>>> cc70505338358502181738e458a67ae37cff1e42
 /* ----------------------------------------------------- */
 /* Escondendo a versão do Wordpress */
 /* ----------------------------------------------------- */
@@ -46,9 +43,9 @@ require_once('functions/custom-wp-login.php');
 require_once('functions/bootstrap-menu.php');
 register_nav_menu('top-bar', __('principal'));
 
+require_once('functions/yamm-nav-walker.php');
 
 /**********************************************************/
-
 require_once ('functions/theme_includes.php');
 
 /* ----------------------------------------------------- */
@@ -99,11 +96,7 @@ if ( function_exists('register_sidebar') )
 
 if ( function_exists('register_sidebar') )
     register_sidebar(array(
-<<<<<<< HEAD
-        'name' => 'institucional',
-=======
         'name' => 'campanha',
->>>>>>> cc70505338358502181738e458a67ae37cff1e42
         'before_widget' => '<div class="">',
         'after_widget' => '</div>',
         'before_title' => '<div class="><h3 class="">',

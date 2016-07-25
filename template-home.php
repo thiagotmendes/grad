@@ -3,24 +3,17 @@
 <?php get_header() ?>
 
     <section class="banner">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/banner.jpg" alt="" class="img-responsive"/>
-      <div class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title">Modal title</h4>
-            </div>
-            <div class="modal-body">
-              <p>One fine body&hellip;</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-          </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-      </div><!-- /.modal -->
+      <div class="container">
+        <div class="form-banner">
+          <div class="titulo-formbanner">
+            <h1> Dúvidas? Podemos te ajudar <img src="<?php echo get_template_directory_uri() ?>/images/icon-question.png" alt="" /> </h1>
+          </div>
+          <div class="content-form">
+            <?php echo do_shortcode('[contact-form-7 id="208" title="Form banner"]') ?>
+          </div>
+        </div>
+      </div>
+      <?php echo do_shortcode('[rev_slider alias="slider-home"]') ?>
     </section>
 
     <section class="cursos">
@@ -36,26 +29,13 @@
         ));
         foreach ( $term_tilte as $curso ) {
         ?>
-          <?php
-
-          ?>
           <h3 class="titulo-pos"><?php echo $curso->name ?></h3>
           <?php
             $argCursos = array(
               'post_type'       => 'cursos',
-<<<<<<< HEAD
               'posts_per_page'  => 8,
               'orderby' => 'menu_order',
               'order' => 'ASC',
-=======
-<<<<<<< HEAD
-              'posts_per_page'  => 8,
-              'orderby' => 'menu_order',
-              'order' => 'ASC',
-=======
-              'posts_per_page'  => 4,
->>>>>>> cc70505338358502181738e458a67ae37cff1e42
->>>>>>> 18deb654a219c7db7a3d46520e1027897c08f756
               'tax_query' => array(
                 array(
                 'taxonomy' => 'categoria',
@@ -278,15 +258,7 @@
             </div>
           </div>
           <div class="col-md-4">
-<<<<<<< HEAD
             <a href="<?php echo esc_url( home_url( 'fature-alto' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/call-gestor.jpg" alt=""  class="img-responsive img-call-gestor"/></a>
-=======
-<<<<<<< HEAD
-            <a href="<?php echo esc_url( home_url( 'seja-um-gestor' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/call-gestor.jpg" alt=""  class="img-responsive img-call-gestor"/></a>
-=======
-            <img src="<?php echo get_template_directory_uri(); ?>/images/call-gestor.jpg" alt=""  class="img-responsive img-call-gestor"/>
->>>>>>> cc70505338358502181738e458a67ae37cff1e42
->>>>>>> 18deb654a219c7db7a3d46520e1027897c08f756
           </div>
         </div>
       </div>
