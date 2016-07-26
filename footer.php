@@ -2,7 +2,9 @@
   <div class="container">
     <div class="row">
       <div class="col-md-3">
-        <img src="<?php echo get_template_directory_uri() ?>/images/logo-baixo.png" alt=""  class="logo-footer img-responsive"/>
+        <a href="http://www.grupoandrademartins.com.br/" target="_blank">
+          <img src="<?php echo get_template_directory_uri() ?>/images/logo-baixo.png" alt=""  class="logo-footer img-responsive"/>
+        </a>
       </div>
       <div class="col-md-3">
         <span class="titulo-footer">Institucional</span>
@@ -31,30 +33,16 @@
       </div>
       <div class="col-md-2">
         <div class="sociais-footer">
-          <a href="#"><img src="<?php echo get_template_directory_uri() ?>/images/s1.png" alt="" class="sociais"/></a> <a href="#"> <img src="<?php echo get_template_directory_uri() ?>/images/s2.png" alt="" class="sociais-col-direita"/></a><br>
-          <a href="#"><img src="<?php echo get_template_directory_uri() ?>/images/s3.png" alt="" class="sociais"/></a> <a href="#"> <img src="<?php echo get_template_directory_uri() ?>/images/s4.png" alt="" class="sociais-col-direita"/></a><br>
-          <a href="#"><img src="<?php echo get_template_directory_uri() ?>/images/s5.png" alt="" /></i></a>
+          <a href="https://www.linkedin.com/company/instituto-cotemar" target="_blank"><img src="<?php echo get_template_directory_uri() ?>/images/s1.png" alt="" class="sociais"/></a>
+          <a href="https://www.facebook.com/InstitutoCotemar" target="_blank"> <img src="<?php echo get_template_directory_uri() ?>/images/s2.png" alt="" class="sociais-col-direita"/></a><br>
+          <a href="https://www.instagram.com/instituto_cotemar/" target="_blank"><img src="<?php echo get_template_directory_uri() ?>/images/s5.png" alt="" class="sociais"/></i></a>
+          <a href="https://plus.google.com/109714730035419030606/posts"> <img src="<?php echo get_template_directory_uri() ?>/images/s4.png" alt="" class="sociais-col-direita"/></a><br>
+
+          <!--<a href="#" target="_blank"><img src="<?php echo get_template_directory_uri() ?>/images/s3.png" alt="" class="sociais"/></a>-->
         </div>
       </div>
     </div>
   </div>
-<<<<<<< HEAD
-</footer>
-<section class="copy">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-10">
-        <div>
-          <p class="texto-copy">Copyright (c) 2016 Instituto COTEMAR. Todos os direitos reservados. Termosde uso e privacidade.</p>
-        </div>
-      </div>
-      <div class="col-md-2">
-        <a href="http://4media.com.br/" target="_blank" class="ass"><strong>4media</strong></a></p>
-      </div>
-    </div>
-  </div>
-</section>
-=======
   <section class="copy">
     <div class="container">
       <div class="row">
@@ -71,6 +59,5 @@
   </section>
 </footer>
 <?php wp_footer() ?>
->>>>>>> cc70505338358502181738e458a67ae37cff1e42
 </body>
 </html>

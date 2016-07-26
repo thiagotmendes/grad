@@ -2,7 +2,6 @@
 
   <main>
     <div class="container">
-      <h1>Ops! </h1>
       <center><img src="<?php echo get_template_directory_uri() ?>/images/404.jpg" alt="" /></center>
       <p align="center">
         A página que você esta tentando acessar não existe!
