@@ -567,8 +567,8 @@ main {
 }
 
 .aba-azul:visited {
-  background: #044e7f;
-  color: #fff;
+  background: #044e7f !important;
+  color: #fff !important;
 }
 
 .aba-azul:hover, .aba-azul:active, .aba-azul:focus {
@@ -600,26 +600,62 @@ main {
 
 /********** TABS DOS CURSOS *****************/
 .tabs-curso{
-  background-color: #eaeaea;
+   background-color: #eaeaea;
 }
+/**********************************************************************/
+.aba-azul {
+  background: #044e7f;
+  color: #fff;
+  font-size: 18px;
+}
+
+.aba-azul:visited {
+  background: #044e7f;
+   color: #fff;
+  }
 
 .conteudo-tabs{
   padding: 20px 0;
 }
+.aba-azul:hover, .aba-azul:active, .aba-azul:focus {
+  background: #f15a2b !important;
+  color: #fff !important;
+  border: 1px solid #f15a2b !important;
+  cursor: pointer;
+   transition-duration: 1s;
+  }
 
 .tabs-curso > li > a{
-   border-radius: 0px !important;
- }
+  border-radius: 0px !important;
+}
+.aba-laranja {
+  background: #f15a2b;
+  color: #fff;
+  font-size: 18px;
+  }
 
- .tabs-curso > li > a:hover,
- .tabs-curso > li > a:focus,
- .tabs-curso > li.active > a,
- .tabs-curso > li.active > a:focus,
- .tabs-curso > li.active > a:hover{
-   background-color: #044e7f;
-   color: #eaeaea;
- }
+.tabs-curso > li > a:hover,
+.tabs-curso > li > a:focus,
+.tabs-curso > li.active > a,
+.tabs-curso > li.active > a:focus,
+.tabs-curso > li.active > a:hover{
+  background-color: #044e7f !important;
+   color: #eaeaea !important;
+}
+/*.aba-laranja:visited {
+  background: #f15a2b;
+  color: #fff;
+}*/
 
+.aba-laranja:hover, .aba-laranja:active, .aba-laranja:focus,.aba-laranja:visited {
+  background: #044e7f !important;
+  color: #fff !important;
+  border: 1px solid #044a7f !important;
+  cursor: pointer;
+  transition-duration: 1s;
+  }
+
+  /********************************************/
 
 /****************FOOTER******************/
 footer {

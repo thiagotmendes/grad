@@ -203,6 +203,36 @@ main{
   border: #ccc solid 1px;
 }
 
+/*  ARCHIVE */
+
+.archive-main{
+  margin-top: 25px;
+}
+
+/********* PAGINAÇÃO ************************/
+.wp_pagination .current{
+  border:#044e7f solid 1px;
+  display: block;
+  float: left;
+  margin: 0 4px;
+  padding: 8px;
+
+}
+
+.wp_pagination a{
+  border: #b9370f solid 1px;
+  background: #f15a2b;
+  color: #fff;
+  display: block;
+  float: left;
+  margin: 0 4px;
+  padding: 8px;
+}
+
+.wp_pagination a:hover{
+  background: #b9370f;
+}
+
 /***************************************************************************/
 .form-pagamento strike{
   color: #791315;
@@ -312,7 +342,7 @@ main{
   border: #ccc solid 1px;
   border-radius: 5px;
   display: block;
-  padding: 8px 10px;
+  padding: 6px 10px;
   background: #f1f1f1;
   color: #656565;
   transition-duration: 0.3s;

@@ -63,14 +63,16 @@
             </div>
             <div class="col-md-6">
               <span>
+                <form role="search" method="get" id="searchform" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
                 <div class="input-group pesquisa-top">
 
-                  <input type="text" class="form-control" placeholder="O que você procura...">
-                  <span class="input-group-btn">
-                    <button class="btn btn-warning" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
-                  </span>
+                    <input type="text" name="s" id="s" class="form-control" placeholder="O que você procura...">
+                    <span class="input-group-btn">
+                      <button class="btn btn-warning" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </span>
 
                 </div><!-- /input-group -->
+                </form>
               </span>
               <span>
                 <a class="btn btn-call-top" href="#" role="button" data-toggle="modal" data-target="#ligacao-cliente">Ligamos para você. Clique Aqui!</a>
@@ -79,7 +81,7 @@
           </div>
         </div>
       </div>
-      <nav class="navbar navbar-graduamais">
+      <nav class="navbar navbar-graduamais yamm">
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
@@ -98,6 +100,7 @@
   		    		'menu' => 'principal',
   		    		'menu_class' => 'nav navbar-nav',
               'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+              'theme_location' => 'top-bar',
               'walker'            => new wp_bootstrap_navwalker()
   		    	);
   		    	wp_nav_menu( $args ); ?>
