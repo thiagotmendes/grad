@@ -16,10 +16,7 @@
       <div class="col-md-12">
         <form class="form-inline" action="index.html" method="post">
           <div class="form-group">
-            <input type="text" class="form-control" id="" placeholder="">
-          </div>
-          <div class="form-group">
-            <button type="button" class="btn btn-primary"> Pesquisar </button>
+            <input type="text" class="form-control input-pesquisa" alt="lista-cursos" id="" placeholder="Pesquisar Por...">
           </div>
         </form>
       </div>
@@ -27,18 +24,20 @@
     <?php
       while($subCursos->have_posts()): $subCursos->the_post();
     ?>
-    <div class="row">
-      <div class="col-md-7">
-        <a href="<?php the_permalink() ?>" class="btn-link-curso"><?php the_title(); ?></a>
-      </div>
-      <div class="col-md-2">
-        <a href="<?php the_permalink() ?>" class="btn btn-saibamais-curso"> Saiba Mais </a>
-      </div>
-      <div class="col-md-3">
-        <?php $titulo = get_the_title(); ?>
-        <a href="<?php echo esc_url( home_url( 'matricule-se' ) ); ?>?curso=<?php echo str_replace(' ', '-', $titulo)  ?>&c=<?php echo get_the_id() ?>" class="btn btn-matricule">
-          Matricule-se
-        </a>
+    <div class="row lista-cursos">
+      <div class="filtra">
+        <div class="col-md-7">
+          <a href="<?php the_permalink() ?>" class="btn-link-curso"><?php the_title(); ?></a>
+        </div>
+        <div class="col-md-2">
+          <a href="<?php the_permalink() ?>" class="btn btn-saibamais-curso"> Saiba Mais </a>
+        </div>
+        <div class="col-md-3">
+          <?php $titulo = get_the_title(); ?>
+          <a href="<?php echo esc_url( home_url( 'matricule-se' ) ); ?>?curso=<?php echo str_replace(' ', '-', $titulo)  ?>&c=<?php echo get_the_id() ?>" class="btn btn-matricule">
+            Matricule-se
+          </a>
+        </div>
       </div>
     </div>
     <?php

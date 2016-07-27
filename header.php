@@ -64,7 +64,7 @@
                 <img src="<?php echo get_template_directory_uri() ?>/images/logo.png" alt="<?php bloginfo( 'name' ); ?>" class="img-responsive"/>
               </a>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 form-head">
               <span>
                 <form role="search" method="get" id="searchform" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
                 <div class="input-group pesquisa-top">
@@ -85,19 +85,19 @@
         </div>
       </div>
       <nav class="navbar navbar-graduamais yamm">
-        <div class="container">
+        <div class="container header-container">
           <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
+          <!--<div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-          </div>
+          </div>-->
 
           <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <div class="" id="">
             <?php
   		    	$args = array(
   		    		'menu' => 'principal',

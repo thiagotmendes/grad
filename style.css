@@ -243,14 +243,67 @@ main{
   padding: 0 0 15px;
 }
 
+.navbar-toggle .icon-bar{
+  background: #fff;
+  color: #fff;
+}
+
+@media (max-width:640px){
+  .form-head{
+    display: none;
+  }
+
+  .form-banner{
+    display: none;
+  }
+
+  .header-container{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+
+  .conteudo-depo{
+    border-right: transparent solid 1px !important;
+  }
+
+  .logo-rodape{
+    text-align: center;
+  }
+
+  .menu-rodape{
+    display: none;
+  }
+
+  .logo-footer{
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+
+  .pag-interno{
+    padding:0 15px;
+  }
+
+  .btn-link-curso{
+    margin-bottom: 0px !important;
+    border-radius: 0px !important;
+  }
+
+  .btn-matricule{
+    margin-bottom: 20px;
+  }
+
+  .btn{
+    border-radius: 0px !important;
+  }
+
+}
+
 /******************* Yamm ajustes *****************************************/
 .elementy-ul{
   padding: 0px;
   margin: 0px;
   list-style: none;
 }
-
-
 /**********************************************************************/
 /*************** FORMBANNER *******************************************/
 .form-banner{
@@ -288,7 +341,6 @@ main{
 }
 
 /********************************/
-
 .trilha{
   background-color: #eaeaea;
   padding: 10px 0;
@@ -342,7 +394,7 @@ main{
   border: #ccc solid 1px;
   border-radius: 5px;
   display: block;
-  padding: 6px 10px;
+  padding: 8px 10px;
   background: #f1f1f1;
   color: #656565;
   transition-duration: 0.3s;

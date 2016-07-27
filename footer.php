@@ -1,12 +1,12 @@
 <footer>
   <div class="container">
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-md-3 logo-rodape">
         <a href="http://www.grupoandrademartins.com.br/" target="_blank">
-          <img src="<?php echo get_template_directory_uri() ?>/images/logo-baixo.png" alt=""  class="logo-footer img-responsive"/>
+          <img src="<?php echo get_template_directory_uri() ?>/images/logo-baixo.png" alt=""  class="logo-footer" />
         </a>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3 menu-rodape">
         <span class="titulo-footer">Institucional</span>
         <div>
           <?php
@@ -18,7 +18,7 @@
           wp_nav_menu( $args ); ?>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 menu-rodape">
         <span class="titulo-footer">Endereço</span>
         <div class="end-footer">
           <p><i class="fa fa-phone" aria-hidden="true"></i> <span class="fone-footer">0800 037 4212</span>
@@ -31,7 +31,7 @@
             <span class="comp-end">Itaúna MG, 35680-229<span></span></p>
         </div>
       </div>
-      <div class="col-md-2">
+      <div class="col-md-2 menu-rodape">
         <div class="sociais-footer">
           <a href="https://www.linkedin.com/company/instituto-cotemar" target="_blank"><img src="<?php echo get_template_directory_uri() ?>/images/s1.png" alt="" class="sociais"/></a>
           <a href="https://www.facebook.com/InstitutoCotemar" target="_blank"> <img src="<?php echo get_template_directory_uri() ?>/images/s2.png" alt="" class="sociais-col-direita"/></a><br>
