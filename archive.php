@@ -28,4 +28,4 @@ get_header(); ?>
 			</div>
 		</div>
 	</main>
-<?php get_footer(); ?>
+<?php get_footer('interno'); ?>

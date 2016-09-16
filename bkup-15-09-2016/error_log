@@ -1,0 +1,160 @@
+[14-Jul-2016 18:09:13 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/media4/public_html/graduamais/wp-content/themes/graduamais/template-home.php on line 26
+[19-Jul-2016 13:23:23 UTC] PHP Parse error:  syntax error, unexpected ''tax_query'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/media4/public_html/graduamais/wp-content/themes/graduamais/template-home.php on line 32
+[20-Jul-2016 16:56:36 UTC] PHP Fatal error:  Call to undefined function get_the_slug() in /home/media4/public_html/graduamais/wp-content/themes/graduamais/parts/content-filho.php on line 51
+[20-Jul-2016 16:56:51 UTC] PHP Fatal error:  Call to undefined function the_slug() in /home/media4/public_html/graduamais/wp-content/themes/graduamais/parts/content-filho.php on line 51
+[20-Jul-2016 17:07:06 UTC] PHP Fatal error:  Call to undefined function get_slug() in /home/media4/public_html/graduamais/wp-content/themes/graduamais/parts/content-filho.php on line 51
+[21-Jul-2016 20:19:31 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/media4/public_html/graduamais/wp-content/themes/graduamais/parts/content-formMatricula.php on line 29
+[21-Jul-2016 20:30:47 UTC] PHP Parse error:  syntax error, unexpected ''meta_value'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/media4/public_html/graduamais/wp-content/themes/graduamais/parts/content-formMatricula.php on line 20
+[21-Jul-2016 20:49:16 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/media4/public_html/graduamais/wp-content/themes/graduamais/header.php:9) in /home/media4/public_html/graduamais/wp-content/themes/graduamais/parts/content-formMatricula.php on line 19
+[21-Jul-2016 20:50:33 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/media4/public_html/graduamais/wp-content/themes/graduamais/header.php:9) in /home/media4/public_html/graduamais/wp-content/themes/graduamais/parts/content-formMatricula.php on line 20
+[21-Jul-2016 20:51:09 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/media4/public_html/graduamais/wp-content/themes/graduamais/header.php:9) in /home/media4/public_html/graduamais/wp-content/themes/graduamais/parts/content-formMatricula.php on line 21
+[21-Jul-2016 20:51:30 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/media4/public_html/graduamais/wp-content/themes/graduamais/header.php:9) in /home/media4/public_html/graduamais/wp-content/themes/graduamais/parts/content-formMatricula.php on line 21
+[21-Jul-2016 20:51:34 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/media4/public_html/graduamais/wp-content/themes/graduamais/header.php:9) in /home/media4/public_html/graduamais/wp-content/themes/graduamais/parts/content-formMatricula.php on line 21
+[21-Jul-2016 20:52:46 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/media4/public_html/graduamais/wp-content/themes/graduamais/header.php:9) in /home/media4/public_html/graduamais/wp-content/themes/graduamais/parts/content-formMatricula.php on line 21
+[21-Jul-2016 20:55:47 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/media4/public_html/graduamais/wp-content/themes/graduamais/header.php:9) in /home/media4/public_html/graduamais/wp-content/themes/graduamais/parts/content-formMatricula.php on line 21
+[21-Jul-2016 20:56:07 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/media4/public_html/graduamais/wp-content/themes/graduamais/header.php:9) in /home/media4/public_html/graduamais/wp-content/themes/graduamais/parts/content-formMatricula.php on line 21
+[22-Jul-2016 20:06:44 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/media4/public_html/graduamais/wp-content/themes/graduamais/header.php on line 102
+[22-Jul-2016 20:06:58 UTC] PHP Fatal error:  Class 'Yamm_Nav_Walker' not found in /home/media4/public_html/graduamais/wp-content/themes/graduamais/header.php on line 101
+[22-Jul-2016 20:56:19 UTC] PHP Fatal error:  Class 'Yamm_Nav_Walker' not found in /home/media4/public_html/graduamais/wp-content/themes/graduamais/header.php on line 101
+[25-Jul-2016 14:00:54 UTC] PHP Parse error:  syntax error, unexpected 'yoast_breadcrumb' (T_STRING), expecting ',' or ';' in /home/media4/public_html/graduamais/wp-content/themes/graduamais/header.php on line 113
+[25-Jul-2016 18:50:28 UTC] PHP Fatal error:  Class 'wp_bootstrap_navwalker' not found in /home/media4/public_html/graduamais/wp-content/themes/graduamais/header.php on line 101
+[25-Jul-2016 18:57:50 UTC] PHP Fatal error:  Class 'wp_bootstrap_navwalker' not found in /home/media4/public_html/graduamais/wp-content/themes/graduamais/header.php on line 101
+[25-Jul-2016 18:57:51 UTC] PHP Fatal error:  Class 'wp_bootstrap_navwalker' not found in /home/media4/public_html/graduamais/wp-content/themes/graduamais/header.php on line 101
+[25-Jul-2016 18:57:55 UTC] PHP Fatal error:  Class 'wp_bootstrap_navwalker' not found in /home/media4/public_html/graduamais/wp-content/themes/graduamais/header.php on line 101
+[25-Jul-2016 20:37:00 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 20:37:00 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 20:37:00 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 20:40:09 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 20:40:09 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 20:40:09 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 20:41:57 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 20:41:57 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 20:41:57 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 20:44:03 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 20:44:03 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 20:44:03 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 20:44:47 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 20:44:47 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 20:44:47 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 20:45:00 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 20:45:01 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 20:45:01 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 20:46:15 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 20:46:16 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 20:46:16 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 20:47:04 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 20:47:05 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 20:47:05 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 20:51:02 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 20:51:02 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 20:51:02 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 20:58:18 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 20:58:18 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 20:58:18 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 20:58:57 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 20:58:57 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 20:58:57 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 21:02:21 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 21:02:22 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 21:02:22 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 21:03:49 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 21:03:49 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 21:03:49 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 21:05:26 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 21:05:26 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 21:05:27 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 21:06:15 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 21:06:15 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 21:06:15 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 21:08:07 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 21:08:07 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 21:08:07 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 21:10:33 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 21:10:33 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 21:10:33 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 21:10:49 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 21:10:49 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 21:10:49 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 21:11:25 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 21:11:25 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 21:11:25 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 21:12:16 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 21:12:16 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 21:12:16 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 21:12:39 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 21:12:39 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 21:12:39 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 21:14:01 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 21:14:01 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 21:14:01 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 21:14:28 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 21:14:28 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 21:14:28 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 21:15:50 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 21:15:50 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[25-Jul-2016 21:15:50 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 13:00:18 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 13:00:18 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 13:11:54 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 13:11:54 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 13:12:53 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 13:12:53 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 13:13:48 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 13:13:48 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 13:14:32 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 13:14:32 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 13:14:52 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 13:14:52 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 13:29:19 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 13:29:19 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 13:29:19 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 13:29:33 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 13:29:33 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 13:29:33 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 13:30:09 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 13:30:09 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 13:30:09 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 13:30:12 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 13:30:12 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 13:30:12 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 13:30:16 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 13:30:16 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 13:30:16 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 13:30:20 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 13:30:20 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 13:30:20 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 14:03:05 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 14:03:05 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 14:03:05 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 14:05:44 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 14:05:44 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 14:05:44 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 14:06:29 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 14:06:29 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 14:06:29 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 14:07:12 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 14:07:12 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 14:07:12 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 14:11:58 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 14:11:58 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 14:11:58 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 14:12:19 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 14:12:19 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 14:12:19 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 14:12:46 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 14:12:47 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 14:12:47 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 14:13:03 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 14:13:03 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 14:13:03 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 14:13:23 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 14:13:23 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 14:13:23 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 14:14:42 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 14:14:42 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[26-Jul-2016 14:14:42 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[30-Jul-2016 13:05:42 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[30-Jul-2016 13:05:42 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[11-Aug-2016 21:09:48 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[11-Aug-2016 21:09:48 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240
+[11-Aug-2016 21:09:48 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/media4/public_html/graduamais/wp-includes/taxonomy.php on line 240

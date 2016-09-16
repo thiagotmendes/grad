@@ -7,6 +7,18 @@ jQuery(document).ready(function($) {
 });
 
 jQuery(document).ready(function(){
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 245) {
+      $("#toposite").addClass("navbar-fixed-top animated fadeInDown");
+      $("#bartop").addClass("bartopscroll");
+    } else {
+      $("#toposite").removeClass("navbar-fixed-top animated fadeInDown");
+      $("#bartop").removeClass("bartopscroll");
+    }
+  });
+});
+
+jQuery(document).ready(function(){
   jQuery('.parceiros').slick({
     dots: true,
     infinite: false,
@@ -87,8 +99,9 @@ $(document).ready(function(){
 
 jQuery(function($){
 	$(".data").mask("99/99/9999");
-  $("#telefone-fix").mask("(999) 9999-9999");
-  $("#cel").mask("(999) 99999-9999");
+  $("#telefone-fix").mask("(99) ?9 9999-9999");
+	$("#telefone-bnh").mask("(99) ?9 9999-9999");
+  $("#cel").mask("(99) 99999-9999");
   $("#cpf").mask("999.999.999-99");
   $("#cep").mask("99999-999");
 	$("#num").mask("00000");

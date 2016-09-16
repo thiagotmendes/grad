@@ -39,11 +39,11 @@
     <![endif]-->
   </head>
   <body>
-    <header>
-      <div class="bar-top">
+    <header id="toposite">
+      <div id="bartop" class="bar-top">
         <div class="container">
           <div class="whats-top">
-            <span><i class="fa fa-whatsapp" aria-hidden="true"></i> <small>037 98826-7505</small></span>
+            <!--<span><i class="fa fa-whatsapp" aria-hidden="true"></i> <small>037 98826-7505</small></span>-->
             <span class="tel-top"><i class="fa fa-phone" aria-hidden="true"></i> 0800 037 4212</span>
             <!--<a href="" target="_blank"><span class="sociais-top"><i class="fa fa-youtube-play" aria-hidden="true" title="Youtube"></i></span></a>-->
             <a href="https://plus.google.com/109714730035419030606/posts" target="_blank"><span class="sociais-top"><i class="fa fa-google-plus" aria-hidden="true" title="Google Plus"></i></span></a>
@@ -53,33 +53,43 @@
             <a href="https://www.facebook.com/InstitutoCotemar" target="_blank"><span class="sociais-top"><i class="fa fa-facebook" aria-hidden="true" title="Facebook"></i></span></a>
 
             <a href="#"><span class="area-aluno"><i class="fa fa-user icon-user" aria-hidden="true"></i> Campus Virtual</span></a>
+            <a href="<?php echo esc_url( home_url( 'fature-alto' ) ); ?>"> <span class="fature-top">Fature Alto</span></a>
           </div>
         </div>
       </div>
       <div>
         <div class="container">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-3">
               <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                <img src="<?php echo get_template_directory_uri() ?>/images/logo.png" alt="<?php bloginfo( 'name' ); ?>" class="img-responsive"/>
+                <img src="<?php echo get_template_directory_uri() ?>/images/logo-cotemar.png" alt="<?php bloginfo( 'name' ); ?>" class="img-responsive"/>
               </a>
             </div>
-            <div class="col-md-6 form-head">
-              <span>
-                <form role="search" method="get" id="searchform" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-                <div class="input-group pesquisa-top">
-
-                    <input type="text" name="s" id="s" class="form-control" placeholder="O que você procura...">
-                    <span class="input-group-btn">
-                      <button class="btn btn-warning" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
-                    </span>
-
-                </div><!-- /input-group -->
-                </form>
-              </span>
-              <span>
-                <a class="btn btn-call-top" href="#" role="button" data-toggle="modal" data-target="#ligacao-cliente">Ligamos para você. Clique Aqui!</a>
-              </span>
+            <div class="col-md-9 form-head">
+              <div class="row">
+                <div class="col-md-6">
+                  <span>
+                    <form role="search" method="get" id="searchform" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+                    <div class="input-group pesquisa-top">
+                        <input type="text" name="s" id="s" class="form-control" placeholder="O que você procura...">
+                        <span class="input-group-btn">
+                          <button class="btn btn-pesquisa-home" type="button"><i class="fa fa-search icon-pesquisa" aria-hidden="true"></i></button>
+                        </span>
+                    </div><!-- /input-group -->
+                    </form>
+                  </span>
+                </div>
+                <div class="col-md-6">
+                  <span>
+                    <a class="btn btn-call-top" href="#" role="button" data-toggle="modal" data-target="#ligacao-cliente">
+                      <i class="fa fa-phone" aria-hidden="true"></i> Ligamos para você. Clique Aqui!
+                    </a>
+                    <a class="btn btn-call-top" href="#" role="button" data-toggle="modal" data-target="#chat">
+                      <i class="fa fa-comments" aria-hidden="true"></i> Chat
+                    </a>
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -138,6 +148,20 @@
             3 - Clique no botão ligar. <br>
             4 - Seu telefone irá tocar em instantes.
             <?php echo do_shortcode('[contact-form-7 id="218" title="Ligamos para você"]') ?>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="chat" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header alert-info">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel"> ATENDIMENTO POR TELEFONE </h4>
+          </div>
+          <div class="modal-body">
+            <iframe src="http://institutocotemar.com.br/suporte" width="100%" height="300"></iframe>
           </div>
         </div>
       </div>

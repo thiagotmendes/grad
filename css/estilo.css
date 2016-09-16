@@ -5,7 +5,7 @@ body {
 }
 
 main {
-  min-height: 500px;
+  min-height:450px;
 }
 
 .bar-top {
@@ -33,7 +33,7 @@ main {
 
 .tel-top {
   color: #f15a2b;
-  font-size: 18px;
+  font-size: 32px;
   margin-left: 15px;
 }
 
@@ -42,20 +42,36 @@ main {
   font-size: 18px;
   color: #f15a2b;
   background: #1f1f1f;
-  padding: 5px 10px;
+  padding: 15px 10px;
   margin-top: -5px;
   margin-bottom: -3px;
 }
 
 .area-aluno:hover {
   float: right;
-  font-size: 18px;
   color: #fff;
   background: #1f1f1f;
   margin-top: -5px;
   margin-bottom: -3px;
   text-decoration: none;
   transition-duration: 0.5s;
+}
+
+.fature-top {
+  float: right;
+  font-size: 18px;
+  color: #f15a2b;
+  padding: 15px 10px;
+  margin-top: -5px;
+  margin-bottom: -3px;
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+
+.fature-top:hover {
+  color: #fff;
+  cursor: pointer;
+  transition-duration: 1s;
 }
 
 .icon-user {
@@ -83,22 +99,21 @@ main {
 .btn-call-top {
   background: #f15a2b;
   color: #fff;
-  margin-top: 45px;
+  margin-top: 40px;
   text-transform: uppercase;
-  font-size: 14px !important;
+  font-size: 16px !important;
+  padding: 10px 10px !important;
+  font-weight: bold !important;
 }
 
 .btn-call-top:hover {
   background: #044e7f;
   color: #fff !important;
-  margin-top: 45px;
-  text-transform: uppercase;
-  font-size: 14px !important;
+  font-size: 16px !important;
   transition-duration: 0.5s;
 }
 
 .pesquisa-top {
-  width: 50% !important;
   display: block;
   float: left;
   margin-top: 45px;
@@ -125,12 +140,16 @@ main {
   background: #fff;
   padding: 0 25px;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 .titulo-depoimento {
   text-align: center;
   color: #044e7f;
   text-transform: uppercase;
+  font-weight: bold;
+  background: #f9f9f9;
+  padding: 0 25px;
 }
 
 .cursos {
@@ -177,6 +196,7 @@ main {
   display: block;
   color: #797979;
   font-weight: bold;
+  font-size: 16px;
 }
 
 .icon-curso {
@@ -501,6 +521,26 @@ main {
   text-transform: uppercase;
   border-radius: 0px !important;
   transition-duration: 1s;
+}
+
+.btn-trabalhe {
+  background: #044e7f;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 0px !important;
+}
+
+.btn-trabalhe:hover {
+  background: #f15a2b;
+  color: #fff !important;
+  text-transform: uppercase;
+  border-radius: 0px !important;
+  transition-duration: 1s;
+}
+
+.box-vaga {
+  border-right: 1px solid #8a8a8b;
+    padding-right: 25px;
 }
 
 .num-form {
