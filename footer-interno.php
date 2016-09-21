@@ -50,7 +50,7 @@
           <a href="https://www.facebook.com/InstitutoCotemar" target="_blank"> <img src="<?php echo get_template_directory_uri() ?>/images/s2.png" alt="" class="sociais-col-direita"/></a><br>
           <a href="https://www.instagram.com/instituto_cotemar/" target="_blank"><img src="<?php echo get_template_directory_uri() ?>/images/s5.png" alt="" class="sociais"/></i></a>
           <a href="https://plus.google.com/109714730035419030606/posts"> <img src="<?php echo get_template_directory_uri() ?>/images/s4.png" alt="" class="sociais-col-direita"/></a><br>
-
+          <a href="https://twitter.com/instcotemar" target="_blank"> <img src="<?php echo get_template_directory_uri() ?>/images/s6.png" alt="" class="sociais"/></a>
           <!--<a href="#" target="_blank"><img src="<?php echo get_template_directory_uri() ?>/images/s3.png" alt="" class="sociais"/></a>-->
         </div>
       </div>

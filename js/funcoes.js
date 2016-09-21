@@ -80,21 +80,54 @@ $(document).ready( function(){
 
 });
 
-$(document).ready(function(){
-	$('#form_matricula').submit(function(){
-		var dados = $( this ).serialize();
-		$.ajax({
-			type: "POST",
-			url: "/wp-content/themes/graduamais/functions/matricula.php",
-			data: dados,
-			success: function( data )
-			{
-				jQuery('#modalConfirm').modal('show')
-			}
-		});
-		return false;
-	});
+jQuery(document).ready(function(){
+	jQuery('#form_matricula').validator().on('submit', function (e) {
+	  if (e.isDefaultPrevented()) {
+	    alert('Necessário Preencher os campos obrigatórios.');
+	  } else {
+			var dados = jQuery( this ).serialize();
+			jQuery.ajax({
+				type: "POST",
+				url: "/wp-content/themes/graduamais/functions/matricula.php",
+				data: dados,
+				success: function( data )
+				{
+					jQuery('#modalConfirm').modal('show')
+				}
+			});
+			return false;
+	  }
+	})
 });
+
+/* formulário da camapanha */
+jQuery(document).ready(function(){
+	jQuery('#cadastro_campanha').validator().on('submit', function (e) {
+	  if (e.isDefaultPrevented()) {
+	    alert('Necessário Preencher os campos obrigatórios.');
+	  } else {
+			var dados = jQuery( this ).serialize();
+			jQuery.ajax({
+				type: "POST",
+				url: "/wp-content/themes/graduamais/functions/envia-promo.php",
+				data: dados,
+				success: function( data )
+				{
+					jQuery('#sucesso').modal('show');
+					jQuery('#nome').val('');
+					jQuery('#email').val('');
+					jQuery('#telefone').val('');
+					jQuery('#nome1').val('');
+					jQuery('#email1').val('');
+					jQuery('#telefone1').val('');
+				}
+			});
+			return false;
+	  }
+	})
+});
+
+
 /********** /FORMULARIO **************/
 
 jQuery(function($){

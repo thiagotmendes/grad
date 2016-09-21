@@ -225,7 +225,7 @@
       </div>-->
     </section>
 
-    <section class="depoimento">
+    <!--<section class="depoimento">
       <div class="container">
         <div class="back-titulo">
           <h1><span class="titulo-depoimento">Depoimentos</span></h1>
@@ -259,13 +259,13 @@
             endwhile;
           endif;
           ?>
-        </div>
+        </div>-->
 
         <!--<p align="center">
           <a class="faca-parte" href="#" role="button">Faça parte você também. <strong>Clique Aqui!</strong></a>
-        </p>-->
+        </p>--
       </div>
-    </section>
+    </section>-->
 
     <section class="gestor">
       <div class="container">
@@ -284,7 +284,7 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div class="box-gestor">
+            <!--<div class="box-gestor">
               <div class="row">
                 <div class="col-md-3">
                   <img src="<?php echo get_template_directory_uri(); ?>/images/daniel.jpg" alt="" />
@@ -303,7 +303,7 @@
                   </p>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
           <div class="col-md-4">
             <a href="<?php echo esc_url( home_url( 'fature-alto' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/call-gestor.jpg" alt=""  class="img-responsive img-call-gestor"/></a>
@@ -319,7 +319,7 @@
         </div>
         <div class="row">
           <?php
-  				$rss = 'http://blog.faculdadeasa.com.br/feed';
+  				$rss = 'http://blog.institutocotemar.com.br/feed/';
   				$xml = simplexml_load_file( $rss, 'SimpleXMLElement', LIBXML_NOCDATA );
   				$countsite = 0;
   				foreach ($xml->channel->item as $feed) {
@@ -347,7 +347,7 @@
   				<?php
   					endif;
   				$countsite++;
-  				}      
+  				}
   				?>
         </div>
       </div>

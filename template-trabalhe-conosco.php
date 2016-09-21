@@ -11,7 +11,7 @@
 							<div class="box-vaga">
 								<h1><?php the_title() ?></h1>
 					      <?php the_content(); ?>
-
+								<!--
 								<h1>Depoimentos</h1>
 								<?php
 								$argumentoDepoimento = array(
@@ -40,7 +40,7 @@
 								<?php
 									endwhile;
 								endif;
-								?>
+								?>-->
 								<div class="clearfix"></div>
 							</div>
 				    </div>

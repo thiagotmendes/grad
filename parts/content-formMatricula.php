@@ -1,4 +1,4 @@
-<form class="" action="" id="form_matricula" method="post" enctype="multipart/form-data">
+<form action="#" id="form_matricula" method="post" enctype="multipart/form-data" role="form">
   <div class="container">
     <div class="box-form">
        <div class="row">
@@ -37,7 +37,7 @@
                   if ($valini1) {
                     echo "<strike> R$" .get_post_field('valor_inicial_1', $idCurso) ."</strike> <br>";
                   }
-                  echo '<input type="radio" name="parcela" id="inlineCheckbox1" value="R$ '.$val1.'">';
+                  echo '<input type="radio" name="parcela" id="inlineCheckbox1" value="R$ '.$val1.'" checked >';
                   echo get_post_field('valor_final_1', $idCurso);
                 echo '</label>';
               endif;
@@ -111,14 +111,16 @@
            <div class="col-md-6">
               <div class="form-group">
                  <label for="exampleInputName2">CPF </label>
-                 <input type="text" name="cpf" class="form-control" id="cpf" placeholder="">
+                 <input type="text" name="cpf" class="form-control" id="cpf" placeholder="" data-error="Campo Obrigatório" required>
                  <small>Somente Números</small>
+                 <div class="help-block with-errors"></div>
               </div>
            </div>
            <div class="col-md-4">
               <div class="form-group">
                  <label for="exampleInputName2">Identidade(RG)</label>
-                 <input type="text" name="identidade" class="form-control" id="" placeholder="">
+                 <input type="text" name="identidade" class="form-control" id="" placeholder="" data-error="Campo Obrigatório" required>
+                 <div class="help-block with-errors"></div>
               </div>
            </div>
            <div class="col-md-2">
@@ -132,7 +134,8 @@
            <div class="col-md-4">
               <div class="form-group">
                  <label for="exampleInputName2">Nome Completo</label>
-                 <input type="text" name="nome" id="nomeCompleto" class="form-control" placeholder="">
+                 <input type="text" name="nome" id="nomeCompleto" class="form-control" placeholder="" data-error="Campo Obrigatório" required>
+                 <div class="help-block with-errors"></div>
               </div>
            </div>
            <div class="col-md-2">
@@ -148,7 +151,8 @@
            <div class="col-md-3">
               <div class="form-group">
                  <label for="exampleInputName2">Data Nascimento</label>
-                 <input type="text" name="data_nascimento" class="form-control data" id="" placeholder="">
+                 <input type="text" name="data_nascimento" class="form-control data" id="" placeholder="" data-error="Campo Obrigatório" required>
+                 <div class="help-block with-errors"></div>
               </div>
            </div>
            <div class="col-md-3">
@@ -162,19 +166,20 @@
           <div class="col-md-3">
             <div class="form-group">
                <label for="exampleInputName2">Telefone Fixo</label>
-               <input type="text" name="telefone" class="form-control" id="telefone-fix" placeholder="">
+               <input type="text" name="telefone" class="form-control" id="telefone-fix" placeholder="" >
             </div>
           </div>
            <div class="col-md-3">
               <div class="form-group">
                  <label for="exampleInputName2">Telefone Celular</label>
-                 <input type="text" name="cel" class="form-control" id="cel" placeholder="">
+                 <input type="text" name="cel" class="form-control" id="cel" placeholder="" data-error="Campo Obrigatório" required>
+                 <div class="help-block with-errors"></div>
               </div>
            </div>
            <div class="col-md-6">
               <div class="form-group">
                  <label for="exampleInputName2">Email</label>
-                 <input type="text" name="email" class="form-control" id="emailInscrito" placeholder="">
+                 <input type="text" name="email" class="form-control" id="emailInscrito" placeholder="" data-error="Campo Obrigatório" required>
               </div>
            </div>
         </div>
@@ -320,8 +325,10 @@
            <div class="col-md-7">
              <div class="checkbox">
                <label>
-                 <input type="checkbox" name="aceito" value="Li e aceito o regulamento e concordo com todas as informações do curso.">
+                 <input type="checkbox" name="aceito" value="Li e aceito o regulamento e concordo com todas as informações do curso."
+                 data-error="Campo Obrigatório" required >
                  Li e aceito o regulamento e concordo com todas as informações do curso.
+                 <div class="help-block with-errors"></div>
                </label>
              </div>
            </div>
@@ -366,17 +373,17 @@
 
          <div class="row">
            <div class="col-md-6">
-             <button type="button" name="button"> Imprimir </button>
+             <!-- <button type="button" name="button"> Imprimir </button> -->
            </div>
            <div class="col-md-6">
              <form method="post" target="pagseguro" action="https://pagseguro.uol.com.br/v2/checkout/payment.html">
                 <!-- Campos obrigatórios -->
-                <input name="receiverEmail" type="hidden" value="suporte@lojamodelo.com.br">
+                <input name="receiverEmail" type="hidden" value="junio@cotemar.com.br">
                 <input name="currency" type="hidden" value="BRL">
                 <!-- Itens do pagamento (ao menos um item é obrigatório) -->
                 <input name="itemId1" type="hidden" value="0001">
-                <input name="itemDescription1" type="hidden" value="<?php echo str_replace('-', ' ', $curso) ?>">
-                <input name="itemAmount1" type="hidden" value="150.00">
+                <input name="itemDescription1" type="hidden" value="<?php echo get_post_field('post_title', $idCurso); ?>">
+                <input name="itemAmount1" type="hidden" value="120.00">
                 <input name="itemQuantity1" type="hidden" value="1">
                 <!-- Código de referência do pagamento no seu sistema (opcional) -->
                 <input name="reference" type="hidden" value="REF1234">
@@ -395,3 +402,8 @@
     </div>
   </div>
 </div>
+
+<script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/integration/stable/rd-js-integration.min.js"></script>
+<script type="text/javascript">
+   RdIntegration.integrate('48846f841a9ffae9900976dc64eb8aba', 'form-pre-matricula-site');
+</script>

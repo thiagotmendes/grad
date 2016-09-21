@@ -1,6 +1,6 @@
 <?php
-  require_once ('../../../../wp-includes/class-phpmailer.php');
-  require_once ('../../../../wp-includes/class-smtp.php');
+  require_once ('class.phpmailer.php');
+  require_once ('class.smtp.php');
 
   $curso_escolhido  = $_POST['curso-escolhido'];
   $cpf              = $_POST['cpf'];
@@ -31,7 +31,7 @@
 
   $mail_body = "<table border='1' cellspacing='0' cellpadding='15' width='100%'>";
     $mail_body .= "<tr>";
-      $mail_body .= "<th colspan='3'> <h3>Inscrição via site Graduamais</h3> </th>";
+      $mail_body .= "<th colspan='3'> <h3>Inscrição via site Instituto Cotemar</h3> </th>";
     $mail_body .= "</tr>";
     $mail_body .= "<tr>";
       $mail_body .= "<td> Curso: $curso_escolhido </td>";
@@ -57,7 +57,7 @@
     $mail_body .= "</tr>";
     $mail_body .= "<tr>";
       $mail_body .= "<td> Telefone: $telefone </td>";
-      $mail_body .= "<td> Celular: $celular </td>";
+      $mail_body .= "<td> Celular: $cel </td>";
       $mail_body .= "<td colspan='2'> Email: $email </td>";
     $mail_body .= "</tr>";
     $mail_body .= "<tr>";
@@ -102,23 +102,22 @@
   // Define os dados do servidor e tipo de conex�o
   // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   $mail->IsSMTP(); // Define que a mensagem ser� SMTP
-  $mail->Host = "localhost"; // Endere�o do servidor SMTP
+  $mail->Host = "smtp.gmail.com"; // Endere�o do servidor SMTP
   $mail->SMTPAuth = true; // Usa autentica��o SMTP? (opcional)
-  $mail->Username = 'smtp@homeofficemoveis.com'; // Usu�rio do servidor SMTP
-  $mail->Password = 'amor2000'; // Senha do servidor SMTP
+  $mail->Username = 'atendimento@grupoandrademartins.com.br'; // Usu�rio do servidor SMTP
+  $mail->Password = 'ZqmnH0AVKp'; // Senha do servidor SMTP
+  $mail->Port = 587;
 
   // Define o remetente
   // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-  $mail->From = "contato@graduamais.fourmedia.com.br"; // Seu e-mail
-  $mail->FromName = 'Gradua Mais'; // Seu nome
+  $mail->From = "atendimento@grupoandrademartins.com.br"; // Seu e-mail
+  $mail->FromName = 'Instituto Cotemar'; // Seu nome
 
   // Define os destinat�rio(s)
   // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-  //$mail->AddAddress('pierreairam@gmail.com', 'Home Ofiice');
-  //$mail->AddAddress('norma@homeofficemoveis.com', 'Home Ofiice');
-  $mail->AddAddress('thiago@4media.com.br', 'Gradua Mais');
-  //$mail->AddCC('ciclano@site.net', 'Ciclano'); // Copia
-  //$mail->AddBCC('fulano@dominio.com.br', 'Fulano da Silva'); // C�pia Oculta
+  $mail->AddAddress('matricula@grupoandrademartins.com.br', 'Instituto Cotemar');
+  $mail->AddAddress('diti@grupoandrademartins.com.br', 'Instituto Cotemar');
+  $mail->AddAddress('mktdigital@grupoandrademartins.com.br', 'Instituto Cotemar');
 
   // Define os dados técnicos da Mensagem
   // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -142,7 +141,7 @@
   $mail->AddAttachment($f_tmp, $f_name);  // Insere um anexo
 
   // Envia o e-mail
-  //$enviado = $mail->Send();
+  $enviado = $mail->Send();
 
   // Limpa os destinat�rios e os anexos
   $mail->ClearAllRecipients();
@@ -155,5 +154,3 @@
   	echo "Não foi possível enviar o e-mail.<br /><br />";
   	echo "<b>Informações do erro:</b> <br />" . $mail->ErrorInfo;
   }
-
-?>

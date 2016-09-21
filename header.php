@@ -37,6 +37,12 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <!--RD STATION-->
+    <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/49b9e3e6-e213-4979-b2ec-5741c7a35e97-loader.js" ></script>
+
+
+
   </head>
   <body>
     <header id="toposite">
@@ -52,7 +58,9 @@
             <a href="https://www.instagram.com/instituto_cotemar/" target="_blank"><span class="sociais-top"><i class="fa fa-instagram" aria-hidden="true" title="Instagram"></i></span></a>
             <a href="https://www.facebook.com/InstitutoCotemar" target="_blank"><span class="sociais-top"><i class="fa fa-facebook" aria-hidden="true" title="Facebook"></i></span></a>
 
-            <a href="#"><span class="area-aluno"><i class="fa fa-user icon-user" aria-hidden="true"></i> Campus Virtual</span></a>
+            <a href="http://ava.grupoandrademartins.com.br/login/index.php" target="_blank">
+              <span class="area-aluno"><i class="fa fa-user icon-user" aria-hidden="true"></i> Campus Virtual</span>
+            </a>
             <a href="<?php echo esc_url( home_url( 'fature-alto' ) ); ?>"> <span class="fature-top">Fature Alto</span></a>
           </div>
         </div>
@@ -84,7 +92,7 @@
                     <a class="btn btn-call-top" href="#" role="button" data-toggle="modal" data-target="#ligacao-cliente">
                       <i class="fa fa-phone" aria-hidden="true"></i> Ligamos para você. Clique Aqui!
                     </a>
-                    <a class="btn btn-call-top" href="#" role="button" data-toggle="modal" data-target="#chat">
+                    <a class="btn btn-call-top" href="#" onclick="javascript:void(window.open('/suporte/chat.php?code=U0VSVkVSUEFHRQ__','','width=590,height=610,left=0,top=0,resizable=yes,menubar=no,location=yes,status=yes,scrollbars=yes'))">
                       <i class="fa fa-comments" aria-hidden="true"></i> Chat
                     </a>
                   </span>
@@ -140,7 +148,7 @@
         <div class="modal-content">
           <div class="modal-header alert-info">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel"> ATENDIMENTO POR TELEFONE </h4>
+            <h4 class="modal-title" id="myModalLabel"> LIGAMOS PARA VOCÊ </h4>
           </div>
           <div class="modal-body">
             1 - Preencha os dados. <br>
@@ -158,10 +166,10 @@
         <div class="modal-content">
           <div class="modal-header alert-info">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel"> ATENDIMENTO POR TELEFONE </h4>
+            <h4 class="modal-title" id="myModalLabel"> CHAT </h4>
           </div>
           <div class="modal-body">
-            <iframe src="http://institutocotemar.com.br/suporte" width="100%" height="300"></iframe>
+            <iframe src="http://institutocotemar.com.br/suporte/" width="100%" height="300"></iframe>
           </div>
         </div>
       </div>

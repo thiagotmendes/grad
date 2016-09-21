@@ -14,5 +14,6 @@ if(!is_admin()){
 	wp_enqueue_script( 'Bootstrap', get_template_directory_uri() . '/js/bootstrap.js', array(), '3.3.5', true );
 	wp_enqueue_script( 'slick', get_template_directory_uri() . '/js/slick.js', array(),'1.5.9', true );
 	wp_enqueue_script( 'maskedinput', get_template_directory_uri() . '/js/jquery.maskedinput.min.js', array(),'1.5.9', true );
+	wp_enqueue_script( 'Validator', get_template_directory_uri() . '/js/validator.js', array(),'1.5.9', true );
 	wp_enqueue_script( 'Funções', get_template_directory_uri() . '/js/funcoes.js', array(), '1.0.0', true );
 }
